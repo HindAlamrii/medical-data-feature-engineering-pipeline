@@ -63,6 +63,8 @@ A robust pipeline was developed to handle real-world data issues:
 ## ⚠️ Important Note
 All preprocessing steps were applied after train-test split to prevent data leakage.
 
+The dataset is not included due to size limitations. The full pipeline was developed and tested on a 900K+ record healthcare dataset.
+
 ---
 
 ## 👩‍💻 Author
