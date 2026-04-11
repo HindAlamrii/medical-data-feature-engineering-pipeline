@@ -55,7 +55,6 @@ A robust pipeline was developed to handle real-world data issues:
 ## 📁 Project Structure
 - notebooks/ → full workflow
 - src/ → reusable pipeline
-- outputs/ → processed datasets
 - report/ → full analysis
 
 ---
@@ -68,4 +67,4 @@ The dataset is not included due to size limitations. The full pipeline was devel
 ---
 
 ## 👩‍💻 Author
-Hind
+HindAlamrii
