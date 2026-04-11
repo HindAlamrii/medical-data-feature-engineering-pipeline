@@ -1,30 +1,69 @@
-# Medical Data Feature Engineering
+# Medical Data Feature Engineering Pipeline
 
-## Overview
-This project focuses on preparing a healthcare dataset for machine learning by applying a complete feature engineering pipeline.
+## 🚀 Project Overview
+This project builds a complete feature engineering pipeline for a real-world healthcare dataset containing over 900K records.
 
-## Dataset
-- Rows: 929,107
-- Columns: 108
-- Contains numerical, categorical, and temporal features
+The goal is to prepare high-quality data for predicting LDL Cholesterol using machine learning.
 
-## Key Steps
-- Data Cleaning (duplicates, missing values)
+---
+
+## 🧠 Problem
+Healthcare datasets are messy:
+- Missing values (millions)
+- High-cardinality categorical variables
+- Duplicate records
+- Mixed data types
+
+---
+
+## ⚙️ Solution
+A robust pipeline was developed to handle real-world data issues:
+
+- Data Cleaning (duplicates, inconsistent formats)
+- Missing Value Imputation
 - Feature Transformation (scaling, encoding)
 - Feature Engineering (date features, interactions)
 - Feature Selection (top 70 features)
+- Data Leakage Prevention (strict train-test separation)
 
-## Target Variable
-LDL Cholesterol
+---
 
-## Results
+## 📊 Results
+- Original Data: 929,107 rows, 108 columns
 - Final Features: 70
-- Training Records: 253,784
-- Testing Records: 63,446
+- Training Set: 253,784 records
+- Testing Set: 63,446 records
+- Null Values: Reduced to 0
 
-## Files
-- `notebook.ipynb` → Full pipeline
-- `Feature_Engineering_Report.pdf` → Project report
+---
 
-## Notes
-All preprocessing was done after train-test split to prevent data leakage.
+## 📈 Key Insights
+- Strong correlation between lipid-related features (LDL, HDL, Cholesterol)
+- Outliers significantly distorted distributions and were successfully removed
+- Feature selection improved efficiency without losing predictive power
+
+---
+
+## 🧪 Tech Stack
+- Python
+- Pandas, NumPy
+- Scikit-learn
+- Seaborn, Matplotlib
+
+---
+
+## 📁 Project Structure
+- notebooks/ → full workflow
+- src/ → reusable pipeline
+- outputs/ → processed datasets
+- report/ → full analysis
+
+---
+
+## ⚠️ Important Note
+All preprocessing steps were applied after train-test split to prevent data leakage.
+
+---
+
+## 👩‍💻 Author
+Hind
