@@ -1,24 +1,30 @@
 # Medical Data Feature Engineering
 
 ## Overview
-This project focuses on preparing and transforming a large-scale medical dataset to improve machine learning model performance.
+This project focuses on preparing a healthcare dataset for machine learning by applying a complete feature engineering pipeline.
 
 ## Dataset
-- Size: 900,000+ records
-- Mixed data types (numerical, categorical, text)
+- Rows: 929,107
+- Columns: 108
+- Contains numerical, categorical, and temporal features
 
-## Approach
-- Handling missing values
-- Encoding categorical variables
-- Feature scaling
-- Feature selection
+## Key Steps
+- Data Cleaning (duplicates, missing values)
+- Feature Transformation (scaling, encoding)
+- Feature Engineering (date features, interactions)
+- Feature Selection (top 70 features)
+
+## Target Variable
+LDL Cholesterol
 
 ## Results
-- Improved model performance after feature engineering
-- Reduced noise and enhanced data quality
+- Final Features: 70
+- Training Records: 253,784
+- Testing Records: 63,446
 
-## Tools
-Python, Pandas, Scikit-learn
+## Files
+- `notebook.ipynb` → Full pipeline
+- `Feature_Engineering_Report.pdf` → Project report
 
-## Key Insight
-Feature engineering had a significant impact on prediction accuracy compared to raw data.
+## Notes
+All preprocessing was done after train-test split to prevent data leakage.
